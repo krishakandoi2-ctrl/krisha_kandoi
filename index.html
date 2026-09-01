@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A modern, professional studio website with polished design, responsive layouts, and smooth interactions."
+    />
+    <title>Northstar Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="container nav-row">
+          <a class="brand" href="#top" aria-label="Northstar Studio home">
+            <span class="brand-mark">N</span>
+            <span class="brand-copy">
+              <strong>Northstar</strong>
+              <span>Studio</span>
+            </span>
+          </a>
+
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="site-nav"
+            aria-label="Open navigation"
+          >
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav class="site-nav" id="site-nav" aria-label="Primary">
+            <a href="#services">Services</a>
+            <a href="#work">Work</a>
+            <a href="#process">Process</a>
+            <a href="#contact">Contact</a>
+            <a class="button button-small button-ghost" href="#contact">Start a Project</a>
+          </nav>
+        </div>
+      </header>
+
+      <main id="top">
+        <section class="hero section">
+          <div class="container hero-grid">
+            <div class="hero-copy reveal">
+              <p class="eyebrow">Design-forward digital partner</p>
+              <h1>Websites that look sharp, move smoothly, and feel built on purpose.</h1>
+              <p class="hero-text">
+                We create polished web experiences for teams that want credibility on day one
+                and a scalable foundation for what comes next.
+              </p>
+              <div class="hero-actions">
+                <a class="button" href="#contact">Book a Discovery Call</a>
+                <a class="button button-ghost" href="#work">See Featured Work</a>
+              </div>
+
+              <div class="hero-metrics">
+                <div>
+                  <strong>42</strong>
+                  <span>launches delivered</span>
+                </div>
+                <div>
+                  <strong>96%</strong>
+                  <span>client retention</span>
+                </div>
+                <div>
+                  <strong>4 weeks</strong>
+                  <span>average first release</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-panel reveal">
+              <div class="hero-card hero-card-main">
+                <div class="card-kicker">
+                  <span class="dot"></span>
+                  <span>Current engagement</span>
+                </div>
+                <h2>Launch-ready site systems for modern brands.</h2>
+                <p>
+                  Strategy, UI design, responsive front-end development, and conversion-focused
+                  content structure in one streamlined workflow.
+                </p>
+                <ul class="feature-list">
+                  <li>Editorial-quality visual direction</li>
+                  <li>Responsive layouts across all key breakpoints</li>
+                  <li>Conversion paths that stay clear and lightweight</li>
+                </ul>
+              </div>
+              <div class="hero-card hero-card-accent">
+                <span>Built to support</span>
+                <strong>Marketing sites</strong>
+                <strong>Product launches</strong>
+                <strong>Service businesses</strong>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="trust-strip section section-tight">
+          <div class="container reveal">
+            <p>Trusted by teams that need polish without agency sprawl</p>
+            <div class="logo-row" aria-label="Partner categories">
+              <span>Fintech</span>
+              <span>Healthcare</span>
+              <span>Consulting</span>
+              <span>SaaS</span>
+              <span>Hospitality</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="services">
+          <div class="container">
+            <div class="section-heading reveal">
+              <p class="eyebrow">Services</p>
+              <h2>Everything needed for a polished web presence, without the clutter.</h2>
+            </div>
+
+            <div class="service-grid">
+              <article class="service-card reveal">
+                <h3>Strategy & positioning</h3>
+                <p>
+                  Messaging structure, page hierarchy, and conversion planning so the site tells
+                  a clear story before design begins.
+                </p>
+              </article>
+              <article class="service-card reveal">
+                <h3>Interface design</h3>
+                <p>
+                  Distinct visual systems with strong typography, modern composition, and a brand
+                  feel that avoids template sameness.
+                </p>
+              </article>
+              <article class="service-card reveal">
+                <h3>Responsive development</h3>
+                <p>
+                  Lightweight, maintainable front-end implementation that adapts elegantly from
+                  mobile to large desktop screens.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section showcase-section" id="work">
+          <div class="container showcase-grid">
+            <div class="section-heading reveal">
+              <p class="eyebrow">Featured work</p>
+              <h2>A flexible showcase area with live switching between case studies.</h2>
+              <p>
+                This interaction is fully wired up in JavaScript so the page feels like a real
+                product site rather than a static mockup.
+              </p>
+            </div>
+
+            <div class="showcase-shell reveal">
+              <div class="showcase-tabs" role="tablist" aria-label="Project highlights">
+                <button
+                  class="showcase-tab is-active"
+                  type="button"
+                  data-case="atlas"
+                  role="tab"
+                  id="tab-atlas"
+                  aria-controls="showcase-card"
+                  aria-selected="true"
+                >
+                  Atlas
+                </button>
+                <button
+                  class="showcase-tab"
+                  type="button"
+                  data-case="vivid"
+                  role="tab"
+                  id="tab-vivid"
+                  aria-controls="showcase-card"
+                  aria-selected="false"
+                >
+                  Vivid
+                </button>
+                <button
+                  class="showcase-tab"
+                  type="button"
+                  data-case="harbor"
+                  role="tab"
+                  id="tab-harbor"
+                  aria-controls="showcase-card"
+                  aria-selected="false"
+                >
+                  Harbor
+                </button>
+              </div>
+
+              <article class="showcase-card" id="showcase-card" role="tabpanel" aria-labelledby="tab-atlas">
+                <p class="showcase-label" id="case-category">Fintech Platform</p>
+                <h3 id="case-title">Atlas Capital</h3>
+                <p id="case-description">
+                  Reframed a dense investment offering into a confident, high-trust website with
+                  clear conversion paths and executive-friendly content blocks.
+                </p>
+                <div class="case-stats" id="case-stats"></div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="process">
+          <div class="container">
+            <div class="section-heading reveal">
+              <p class="eyebrow">Process</p>
+              <h2>A clear delivery flow that keeps projects moving and decisions easy.</h2>
+            </div>
+
+            <div class="process-grid">
+              <article class="process-card reveal">
+                <span>01</span>
+                <h3>Align</h3>
+                <p>We define priorities, audience needs, success metrics, and the pages that matter most.</p>
+              </article>
+              <article class="process-card reveal">
+                <span>02</span>
+                <h3>Design</h3>
+                <p>We shape the visual direction, content rhythm, and interactive moments before development.</p>
+              </article>
+              <article class="process-card reveal">
+                <span>03</span>
+                <h3>Build</h3>
+                <p>We implement responsive front-end code with performance-conscious styling and tidy structure.</p>
+              </article>
+              <article class="process-card reveal">
+                <span>04</span>
+                <h3>Launch</h3>
+                <p>We polish, test, and package the site so it is ready for deployment when you share the target.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section testimonials-section">
+          <div class="container testimonial-grid">
+            <div class="section-heading reveal">
+              <p class="eyebrow">Client perspective</p>
+              <h2>The right site should make your business feel sharper before a single call starts.</h2>
+            </div>
+            <blockquote class="testimonial-card reveal">
+              <p>
+                “Northstar turned a vague wishlist into a website that felt premium, structured,
+                and immediately easier for our sales team to use.”
+              </p>
+              <footer>
+                <strong>Maya Chen</strong>
+                <span>Operations Director, Lattice Health</span>
+              </footer>
+            </blockquote>
+          </div>
+        </section>
+
+        <section class="section contact-section" id="contact">
+          <div class="container contact-grid">
+            <div class="contact-copy reveal">
+              <p class="eyebrow">Contact</p>
+              <h2>Tell us what you’re building, and we’ll outline the next step clearly.</h2>
+              <p>
+                This form is client-side validated and provides immediate feedback so the site is
+                functional even before a backend is connected.
+              </p>
+            </div>
+
+            <form class="contact-form reveal" id="contact-form" novalidate>
+              <label>
+                Name
+                <input type="text" name="name" placeholder="Alex Morgan" required />
+              </label>
+              <label>
+                Email
+                <input type="email" name="email" placeholder="alex@company.com" required />
+              </label>
+              <label>
+                Project type
+                <select name="projectType" required>
+                  <option value="">Select one</option>
+                  <option value="Marketing website">Marketing website</option>
+                  <option value="Portfolio or studio site">Portfolio or studio site</option>
+                  <option value="Product launch page">Product launch page</option>
+                  <option value="Business redesign">Business redesign</option>
+                </select>
+              </label>
+              <label>
+                Goals
+                <textarea
+                  name="goals"
+                  rows="5"
+                  placeholder="A short note about your goals, timeline, or what feels missing in the current site."
+                  required
+                ></textarea>
+              </label>
+              <button class="button" type="submit">Send Inquiry</button>
+              <p class="form-message" id="form-message" aria-live="polite"></p>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-row">
+          <p>Northstar Studio</p>
+          <p>Designed for confident first impressions and scalable growth.</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
